@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "engram-view-demo",
+      "runtimeExecutable": "node",
+      "runtimeArgs": ["server.mjs", "--demo", "--no-open"],
+      "port": 7438
+    },
+    {
+      "name": "engram-view",
+      "runtimeExecutable": "node",
+      "runtimeArgs": ["server.mjs", "--no-open", "--port", "7439"],
+      "port": 7439
+    }
+  ]
+}

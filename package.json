@@ -1,0 +1,15 @@
+{
+  "name": "engram-view",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Visor web local, de solo lectura, para la memoria de Engram",
+  "scripts": {
+    "start": "node server.mjs",
+    "demo": "node server.mjs --demo",
+    "app": "node launch.mjs"
+  },
+  "engines": {
+    "node": ">=22.13"
+  }
+}
