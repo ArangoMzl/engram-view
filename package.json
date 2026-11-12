@@ -1,15 +1,75 @@
 {
   "name": "engram-view",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "type": "module",
   "description": "Visor web local, de solo lectura, para la memoria de Engram",
   "scripts": {
     "start": "node server.mjs",
     "demo": "node server.mjs --demo",
-    "app": "node launch.mjs"
+    "desktop": "electron .",
+    "desktop:demo": "electron . --demo",
+    "dist": "electron-builder --win --publish never"
   },
   "engines": {
     "node": ">=22.13"
+  },
+  "devDependencies": {
+    "electron": "45.3.1",
+    "electron-builder": "26.18.0"
+  },
+  "main": "electron/main.mjs",
+  "author": "ArangoMzl",
+  "license": "MIT",
+  "build": {
+    "appId": "com.arangomzl.engramview",
+    "productName": "Engram View",
+    "copyright": "MIT",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "electron/**",
+      "public/**",
+      "server.mjs",
+      "seed.mjs",
+      "engram-view.ico",
+      "package.json",
+      "!**/*.map"
+    ],
+    "asar": true,
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        },
+        {
+          "target": "portable",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "engram-view.ico",
+      "artifactName": "${productName}-${version}-${arch}-${target}.${ext}"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": "always",
+      "createStartMenuShortcut": true,
+      "shortcutName": "Engram View",
+      "runAfterFinish": true,
+      "installerIcon": "engram-view.ico",
+      "uninstallerIcon": "engram-view.ico",
+      "artifactName": "${productName}-Setup-${version}.${ext}"
+    },
+    "portable": {
+      "artifactName": "${productName}-${version}-portable.${ext}"
+    }
   }
 }

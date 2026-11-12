@@ -179,7 +179,7 @@ ${L.prompts.map((p) => `<span class="p">&gt;</span> ${esc(p.length > 110 ? p.sli
    </div>
    <div class="grid2">
     <div class="card"><div class="card-h"><h2>Actividad</h2><span class="mono muted" style="font-size:11px">últimas 18 semanas</span></div><div class="card-b">${heat(s.activity)}</div></div>
-    <div class="card"><div class="card-h"><h2>Por tipo</h2></div><div class="card-b">${bars}</div></div>
+    <div class="card"><div class="card-h"><h2>Por tipo</h2></div><div class="card-b"><div class="bars">${bars}</div></div></div>
    </div>
    <div class="grid2">
     <div class="card"><div class="card-h"><h2>Memorias recientes</h2><button class="mono" style="font-size:11px;color:var(--accent)" data-view="memorias">ver todas →</button></div><div class="card-b" style="padding:10px 8px">${recent}</div></div>
