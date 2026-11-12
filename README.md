@@ -7,9 +7,9 @@ No es un proyecto oficial de Engram.
 
 ## Instalación (aplicación de escritorio)
 
-Descarga `Engram View-Setup-<versión>.exe` desde [Releases](https://github.com/ArangoMzl/engram-view/releases)
+Descarga `Engram-View-Setup-<versión>.exe` desde [Releases](https://github.com/ArangoMzl/engram-view/releases)
 y ejecútalo. El instalador crea el acceso directo en el escritorio y en el menú Inicio, y no necesita
-Node.js. También hay una versión portable (`Engram View-<versión>-portable.exe`) que no se instala.
+Node.js. También hay una versión portable (`Engram-View-<versión>-portable.exe`) que no se instala.
 
 La app abre su propia ventana en el monitor donde está el ratón, usa un puerto libre (no choca con otras
 instancias) y, si ya está abierta, al lanzarla de nuevo trae al frente la ventana existente.

@@ -54,7 +54,7 @@
         }
       ],
       "icon": "engram-view.ico",
-      "artifactName": "${productName}-${version}-${arch}-${target}.${ext}"
+      "artifactName": "Engram-View-${version}-${arch}-${target}.${ext}"
     },
     "nsis": {
       "oneClick": false,
@@ -66,10 +66,10 @@
       "runAfterFinish": true,
       "installerIcon": "engram-view.ico",
       "uninstallerIcon": "engram-view.ico",
-      "artifactName": "${productName}-Setup-${version}.${ext}"
+      "artifactName": "Engram-View-Setup-${version}.${ext}"
     },
     "portable": {
-      "artifactName": "${productName}-${version}-portable.${ext}"
+      "artifactName": "Engram-View-${version}-portable.${ext}"
     }
   }
 }
